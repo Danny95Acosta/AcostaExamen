@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcostaExamen.Login">
+    <ContentPage.Content>
+        <Grid>
+
+            <Image Source="logo.png"/>
+
+            <StackLayout>
+            <Frame BackgroundColor="Beige" Padding="24" CornerRadius="0">
+                <Label Text="Navegacion LOGIN "
+HorizontalTextAlignment="Center" TextColor="Black" FontSize="18"/>
+            </Frame>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el Usuario"/>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese la Conraseña" IsPassword="True"/>            <Button x:Name="btAbrir" Text="Abrir ventana dos"
+Clicked="btAbrir_Clicked"/>
+            <Label Text="" x:Name="lblResultado" TextColor="Red" FontSize="18"/>
+        </StackLayout>        </Grid>
+    </ContentPage.Content>
+</ContentPage>

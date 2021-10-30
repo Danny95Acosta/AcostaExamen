@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcostaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario"/>
+            <Label x:Name="lblContraseña"/>
+
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Reguistro - De Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Ingrese el Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtDatoUno" Keyboard="Text" Grid.Row="0" Grid.Column="1" TextChanged="txtDatoUno_TextChanged"/>
+
+                <Label Text="Ingrese el Monto Inicial" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtDatoDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtDatoDos_TextChanged"/>
+
+                <Label Text="Ingreso el Pago Mensual" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtDatoTres" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" TextChanged="txtDatoTres_TextChanged"/>
+
+                <Label Text="Resultado" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+            <Button x:Name="btnSuma" Text="Calcular" Clicked="btnSuma_Clicked"/>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

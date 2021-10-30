@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcostaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Label x:Name="lblUsuario"/>
+                <Label x:Name="lblContraseña"/>
+
+                <Label x:Name="lblNombre"/>
+                <Label x:Name="lblTotal"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
